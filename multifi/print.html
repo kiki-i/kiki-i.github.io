@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>MultiFi</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="MultiFi: Multi-target Dataset for WiFi-based Human Action Recognition and Device-free Localization">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="multifi-dfl/multifi-dfl.html"><strong aria-hidden="true">1.</strong> MultiFi-DFL</a></li><li class="chapter-item expanded "><a href="multifi-har/multifi-har.html"><strong aria-hidden="true">2.</strong> MultiFi-HAR</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">MultiFi</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="multifi-multi-target-dataset-for-wifi-based-human-action-recognition-and-device-free-localization"><a class="header" href="#multifi-multi-target-dataset-for-wifi-based-human-action-recognition-and-device-free-localization">MultiFi: Multi-target Dataset for WiFi-based Human Action Recognition and Device-free Localization</a></h1>
+<blockquote>
+<p>Huakun Huang, Peiliang Wang, Kejia Guo, Liwen Tan, Lingjun Zhao, Huawei Huang</p>
+</blockquote>
+<p>WiFi-based human sensing has become a crucial non-invasive technology in various human-centric applications, including metaverse interaction, sign language interpretation, and healthcare monitoring. WiFi-based human sensing has two major tasks, i.e., device-free localization (DFL) and human action recognition (HAR). The existing solution for both tasks mainly focuses on perceiving one target at a time. Focusing on single-target localization significantly restricts the potential applications of WiFi-based human sensing systems. In this paper, we propose MultiFi, the first multi-target dataset for DFL and HAR. It has 710 available positions for DFL and 22 daily actions for HAR. MultiFi also provides data collected from different environments. We believe our MultiFi will significantly contribute to device-free localization, human action recognition, human-computer interaction, and smart building research.</p>
+<h2 id="download"><a class="header" href="#download">Download</a></h2>
+<p>OneDrive: <a href="https://1drv.ms/f/s!AmW7EXHtePrWou1L30k7hpBggY80ow?e=9w2wSE">https://1drv.ms/f/s!AmW7EXHtePrWou1L30k7hpBggY80ow?e=9w2wSE</a></p>
+<p>Password: t5QhoMScZ_BPlZx</p>
+<h2 id="configuration"><a class="header" href="#configuration">Configuration</a></h2>
+<h3 id="environment"><a class="header" href="#environment">Environment</a></h3>
+<p>Figure below illustrates our experiment configuration. It is in a classroom at the university. We removed all furniture from the classroom. Two WiFi devices (i.e., transmitter and receiver) are placed at opposite ends of the classroom.</p>
+<p><img src="./conf.svg" alt="Environment" /></p>
+<h3 id="wifi-configuration"><a class="header" href="#wifi-configuration">WiFi Configuration</a></h3>
+<p>The WiFi signal transmission configurations are listed below:</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>Center Frequency</td><td>5.68GHz</td></tr>
+<tr><td>Bandwidth</td><td>40MHz</td></tr>
+<tr><td>Transmitter Power</td><td>20dBm</td></tr>
+<tr><td>Number of Subcarrier</td><td>114</td></tr>
+<tr><td>Number of Transmitter Antenna</td><td>3</td></tr>
+<tr><td>Number of Receiver Antenna</td><td>3</td></tr>
+<tr><td>Sampling frequency</td><td>1000Hz</td></tr>
+</tbody></table>
+</div>
+<h3 id="hardware"><a class="header" href="#hardware">Hardware</a></h3>
+<p>The mini PC hardware configurations are listed below:</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>CPU</td><td>i3-4030U</td></tr>
+<tr><td>RAM</td><td>4G DDR3 1600Hz</td></tr>
+<tr><td>WiFi NIC</td><td>Qualcomm AR9380</td></tr>
+</tbody></table>
+</div>
+<h3 id="software"><a class="header" href="#software">Software</a></h3>
+<p>We use <a href="https://ps.zpj.io"><code>PicoScenes</code></a> v2023.1026.0939 to collect data.</p>
+<blockquote>
+<p>Zhiping Jiang, Tom H. Luan, Xincheng Ren, Dongtao Lv, Han Hao, Jing Wang, Kun Zhao, Wei Xi, Yueshen Xu, Rui Li, Eliminating the Barriers: Demystifying Wi-Fi Baseband Design and Introducing the PicoScenes Wi-Fi Sensing Platform, in IEEE Internet of Things Journal (IEEE IOT-J), doi: <a href="https://doi.org/10.1109/JIOT.2021.3104666">10.1109/JIOT.2021.3104666</a>.</p>
+</blockquote>
+<h2 id="data-usage"><a class="header" href="#data-usage">Data usage</a></h2>
+<p>We provide raw PicoScenes data and Numpy ndarry data. The most convenient way to use data is to download the Numpy ndarry data, which Numpy can directly read using <code>np.load</code>. To use the raw PicoScenes data, please refer to the following tools to parse the data.</p>
+<ul>
+<li><a href="https://github.com/kiki-i/picoscenes2numpy">picoscenes2numpy</a></li>
+<li><a href="https://github.com/Herrtian/PicoscenesToolbox">PicoscenesToolbox</a></li>
+</ul>
+<p>* Note: The official parsing library <code>PicoscenesToolbox</code> will preprocess the phase [<a href="https://ps.zpj.io/matlab.html#csi-segment">1</a>,<a href="https://gitlab.com/wifisensing/picoscenes-issue-tracker/-/issues/92">2</a>] and remove the cyclic shift delay (CSD). <code>picoscenes2numpy</code> using the interface of <code>PicoscenesToolbox</code> also remove the CSD in the output of phase.</p>
+<p>* Note: The official parsing library <code>PicoscenesToolbox</code> will interpolate the subcarriers [<a href="https://ps.zpj.io/matlab.html#csi-segment">1</a>,<a href="https://gitlab.com/wifisensing/picoscenes-issue-tracker/-/issues/92">2</a>], and the original 114 subcarriers will be interpolated to 117 subcarriers. <code>picoscenes2numpy</code> refers to <a href="https://ieeexplore.ieee.org/document/5307322">802.11n</a> and the subcarrier index in the data, and removes this subcarrier.</p>
+<h2 id="license"><a class="header" href="#license">License</a></h2>
+<p>MultiFi is released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.</p>
+<p><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="https://creativecommons.org/licenses/by-nc-sa/4.0" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="multifi-dfl"><a class="header" href="#multifi-dfl">MultiFi-DFL</a></h1>
+<p>MultiFi-DFL is a dataset for WiFi-based device-free localization. It provides a total of 710 available positions to localize up to three targets simultaneously.</p>
+<h2 id="grid"><a class="header" href="#grid">Grid</a></h2>
+<p>Figure below shows the experiment setup of MultiFi-DFL, which is used for WiFi-based DFL. The experiment area is divided into 12 ⨉ 12 grid area. The area of each square is 0.6 ⨉ 0.6m. The area of the entire experiment area is 51.84m<sup>2</sup>. Each square contains 5 positions for the target. The center of the grid is the <em>Main-position</em>, and the remaining four <em>Sub-position</em> are located on the four corners. The transmitter (TX) has been placed outside the experiment area. The receiver (RX) has been placed inside the area and occupies two squares. Subtract these two squares, the total number of available positions in MultiFi-DFL is 710. We improve data diversity by placing RX in the experiment area. Thus, there are 12 square (i.e., 60 positions) that are not between TX and RX but behind RX.</p>
+<p><img src="multifi-dfl/./grid.svg" alt="Grid" /></p>
+<h2 id="file-organization"><a class="header" href="#file-organization">File Organization</a></h2>
+<pre><code>├── MultiFi-DFL  &lt;Raw PicoScenes data&gt;
+│   ├── 0p  &lt;0 target (i.e., environment)&gt;
+│   ├── 1p  &lt;1 target&gt;
+│   |   ├── main  &lt;Main-position&gt;
+│   |   |   ├── (1,1).csi  &lt;Target in (1,1)&gt;
+│   |   |   ├── (1,2).csi  &lt;Target in (1,2)&gt;
+│   |   |   └── ...
+│   |   ├── sub1  &lt;1st sub-position&gt;
+│   |   ├── sub2  &lt;2nd sub-position&gt;
+│   |   └── ...
+│   ├── 2p  &lt;2 targets&gt;
+│   │   └── main  &lt;Main-position&gt;
+│   │       ├── (2,4)+(3,5).csi  &lt;2 targets in (2,4) and (3,5)&gt;
+│   │       ├── (3,3)+(6,4).csi  &lt;2 targets in (3,3) and (6,4)&gt;
+│   │       └── ...
+│   └── 3p  &lt;3 targets&gt;
+│       └── main  &lt;Main-position&gt;
+│           ├── (2,4)+(9,3)+(3,5).csi  &lt;3 targets in (2,4), (9,3), and (3,5)&gt;
+│           ├── (5,5)+(8,8)+(5,3).csi  &lt;3 targets in (5,5), (8,8), and (5,3)&gt;
+│           └── ...
+└── MultiFi-DFL.npy  &lt;Numpy ndarry data&gt;
+    ├── 0p
+    ├── 1p
+    |   └── main
+    |       ├── (1,1).mag.npy        &lt;Amplitude&gt;
+    |       ├── (1,1).phase.npy      &lt;Phase&gt;
+    |       ├── (1,1).timestamp.npy  &lt;Timestamp&gt;
+    |       └── ...
+    └── ...
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="multifi-har"><a class="header" href="#multifi-har">MultiFi-HAR</a></h1>
+<p>MultiFi-HAR is a dataset for WiFi-based human action recognition. It provides a total of 22 available actions. The action was performed by up to three targets simultaneously.</p>
+<h2 id="environment-1"><a class="header" href="#environment-1">Environment</a></h2>
+<p>The MultiFi-HAR includes a set of 22 daily actions that can be performed at home. These actions are designed based on research in the smart buildings domain. They can be utilized to control systems such as heating, ventilation, and air conditioning. The details of these 22 actions are listed below.</p>
+<p><img src="multifi-har/./environment.svg" alt="Environment" /></p>
+<h2 id="actions"><a class="header" href="#actions">Actions</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Description</th></tr></thead><tbody>
+<tr><td>C1</td><td>Putting on clothes</td></tr>
+<tr><td>C2</td><td>Huffing</td></tr>
+<tr><td>C3</td><td>Crossing chests</td></tr>
+<tr><td>C4</td><td>Shaking shoulders</td></tr>
+<tr><td>C5</td><td>Stomping feet</td></tr>
+<tr><td>C6</td><td>Crossing legs</td></tr>
+<tr><td>C7</td><td>Rubbing hands</td></tr>
+<tr><td>C8</td><td>Huffing with rubbing hands</td></tr>
+<tr><td>H1</td><td>Taking off clothes</td></tr>
+<tr><td>H2</td><td>Rolling up sleeves</td></tr>
+<tr><td>H3</td><td>Fanning with hands</td></tr>
+<tr><td>H4</td><td>Fanning with paper</td></tr>
+<tr><td>H5</td><td>Wiping sweat</td></tr>
+<tr><td>H6</td><td>Shaking shirt</td></tr>
+<tr><td>N1</td><td>Stretching</td></tr>
+<tr><td>N2</td><td>Yawning</td></tr>
+<tr><td>N3</td><td>Turning wrists</td></tr>
+<tr><td>N4</td><td>Turning neck</td></tr>
+<tr><td>N5</td><td>Turning arms</td></tr>
+<tr><td>N6</td><td>Turning body</td></tr>
+<tr><td>N7</td><td>Moving head</td></tr>
+<tr><td>N8</td><td>Standing</td></tr>
+</tbody></table>
+</div>
+<p>The figure below shows the image of these actions.</p>
+<p><img src="multifi-har/./actions.svg" alt="Actions" /></p>
+<h2 id="file-organization-1"><a class="header" href="#file-organization-1">File Organization</a></h2>
+<pre><code>├── MultiFi-HAR  &lt;Raw PicoScenes data&gt;
+|   ├── 0p  &lt;0 target (i.e., environment)&gt;
+|   |── 1p  &lt;1 target&gt;
+|   |   ├── env1  &lt;Environment 1 (w/o obstacle)&gt;
+|   |   |   ├── bright  &lt;Lighting condition&gt;
+|   |   |   |   ├── C1  &lt;Action C1 (Putting on clothes)&gt;
+|   |   |   |   |   ├── sbj1  &lt;Subject 1&gt;
+|   |   |   |   |   |   ├── o1  &lt;Orientation 1 (Face to the TX)&gt;
+|   |   |   |   |   |   |   ├── .csi  &lt;Contain two samples cut in the middle&gt;
+|   |   |   |   |   |   |   ├── ...
+|   |   |   |   |   |   └── o2  &lt;Orientation 2 (Face to the RX)&gt;
+|   |   |   |   |   └── ...
+|   |   |   |   └── ...
+|   |   |   └── dark  &lt;Dark condition&gt;
+|   |   └── env2  &lt;Environment 2 (w/  obstacle)&gt;
+|   ├── 2p  &lt;2 targets&gt;
+|   └── 3p  &lt;3 targets&gt;
+└── MultiFi-HAR.npy  &lt;Numpy ndarry data&gt;
+    ├── 0p
+    ├── 1p
+    |   └── env1
+    |       └── bright
+    |           └── sbj1
+    |               ├── .mag.npy        &lt;Amplitude&gt;
+    |               ├── .phase.npy      &lt;Phase&gt;
+    |               ├── .timestamp.npy  &lt;Timestamp&gt;
+    |               └── ...
+    └── ...
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

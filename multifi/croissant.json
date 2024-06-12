@@ -1,0 +1,2682 @@
+{
+  "@type": "sc:Dataset",
+  "name": "MultiFi",
+  "description": "The first multi-target dataset for DFL and HAR. It has 710 available positions for DFL and 22 daily actions for HAR. MultiFi also provides data collected from different environments. We believe our MultiFi will significantly contribute to device-free localization, human action recognition, human-computer interaction, and smart building research.",
+  "license": "cc-by-nc-sa-4.0",
+  "url": "https://kiki-i.github.io/multifi",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Huakun Huang"
+    },
+    {
+      "@type": "Person",
+      "name": "Peiliang Wang"
+    },
+    {
+      "@type": "Person",
+      "name": "Kejia Guo"
+    },
+    {
+      "@type": "Person",
+      "name": "Liwen Tan"
+    },
+    {
+      "@type": "Person",
+      "name": "Lingjun Zhao"
+    },
+    {
+      "@type": "Person",
+      "name": "Huawei Huang"
+    }
+  ],
+  "keywords": "Wireless Sensing, Intelligent WiFi Sensing,Device-free localization, Human Action Recognition",
+  "citeAs": "@inproceedings{huang2024multifi, title={MultiFi: Multi-target Non-invasive Human Sensing Dataset for WiFi-based Device-free Localization and Human Action Recognition}, author={Huakun Huang, Peiliang Wang, Kejia Guo, Liwen Tan, Lingjun Zhao, Huawei Huang}, booktitle={Thirty-eighth Conference on Neural Information Processing Systems Datasets and Benchmarks Track}, year={2024}}",
+  "distribution": [
+    {
+      "@type": "cr:FileSet",
+      "@id": "MultiFi-DFL",
+      "encodingFormat": "application/x-7z-compressed",
+      "includes": "MultiFi-DFL/*.7z"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "MultiFi-DFL.npy",
+      "encodingFormat": "application/x-7z-compressed",
+      "includes": "MultiFi-DFL.npy/*.7z"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "MultiFi-HAR",
+      "encodingFormat": "application/x-7z-compressed",
+      "includes": "MultiFi-HAR/*.7z"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "MultiFi-HAR.npy",
+      "encodingFormat": "application/x-7z-compressed",
+      "includes": "MultiFi-HAR.npy/*.7z"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL/0p.7z",
+      "name": "MultiFi-DFL/0p.7z",
+      "contentUrl": "MultiFi-DFL/0p.7z",
+      "contentSize": "978820330 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ef4fa817f1eaaf6297c61841ce58918195e050e7ead9d543b5a89ce1d640f105"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL/1p.7z",
+      "name": "MultiFi-DFL/1p.7z",
+      "contentUrl": "MultiFi-DFL/1p.7z",
+      "contentSize": "7186435746 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "58aece77412caadc74156f0399dee955c3d4fd2bca822111b3d5cc4214b640d9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL/2p.7z",
+      "name": "MultiFi-DFL/2p.7z",
+      "contentUrl": "MultiFi-DFL/2p.7z",
+      "contentSize": "999251958 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ffc89b963e3646b50d301d14e0691531c60e7c2103269c913b9011d113cfb26c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL/3p.7z",
+      "name": "MultiFi-DFL/3p.7z",
+      "contentUrl": "MultiFi-DFL/3p.7z",
+      "contentSize": "992496114 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "50ad5b065e62222957440559a763e2079d835e4a76e4fcfc254dd1713514ea8c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL.npy/0p.7z",
+      "name": "MultiFi-DFL.npy/0p.7z",
+      "contentUrl": "MultiFi-DFL.npy/0p.7z",
+      "contentSize": "1011630506 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0c061db4f56a31b6bc2eeee4e5089ffe963f0a4ac8ac0da7db67c67f9552913b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL.npy/1p.7z",
+      "name": "MultiFi-DFL.npy/1p.7z",
+      "contentUrl": "MultiFi-DFL.npy/1p.7z",
+      "contentSize": "7171393195 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bbeb014615010d895f7e016b8b9a5a9bd7f8cbc10b5784debeb972ba7f18403d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL.npy/2p.7z",
+      "name": "MultiFi-DFL.npy/2p.7z",
+      "contentUrl": "MultiFi-DFL.npy/2p.7z",
+      "contentSize": "1011445312 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7028b06b77cd50635caaaf25e434a067207aef0f3ca3042be4185cfc2f1eea66"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-DFL.npy/3p.7z",
+      "name": "MultiFi-DFL.npy/3p.7z",
+      "contentUrl": "MultiFi-DFL.npy/3p.7z",
+      "contentSize": "1006337772 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "cab7008fb21adde08891417098d0e6baab6bacaa83d75f8ec2c4653f907fad9d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/0p.7z",
+      "name": "MultiFi-HAR/0p.7z",
+      "contentUrl": "MultiFi-HAR/0p.7z",
+      "contentSize": "635133729 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "51ad97e0f5ebf112c7802171205f982ddf74e7a34542d28ccdef293e47441cbd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/0p.7z",
+      "name": "MultiFi-HAR.npy/0p.7z",
+      "contentUrl": "MultiFi-HAR.npy/0p.7z",
+      "contentSize": "667061356 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a2aaf0c84a5b4c9c40bb64366a5de1050f5cfea392bc82682eb67338ff373373"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C1.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C1.7z",
+      "contentSize": "818576672 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7de3600f2158afe4e744c74835d40be1c400b4664a878f1c536e2d0107a285eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C2.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C2.7z",
+      "contentSize": "324002211 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "97c9f2184d00fbb4599b50a2d846ce6f7db6a00c1d8d732e2d31ebb498f9ad67"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C3.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C3.7z",
+      "contentSize": "325088956 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4cc9269045325e806a56080cb74caa2989a6d0734a7f5e4a65c0ef33ba419d29"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C4.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C4.7z",
+      "contentSize": "324724188 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b7437ff59011296b383746ff2182d6c0840f853eb1340b7baf73d0325b92088e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C5.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C5.7z",
+      "contentSize": "326552124 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "acbd61b149e6e74c0a7815020c943c6cd49710693b573d387e5c847f1c61531b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C6.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C6.7z",
+      "contentSize": "368722818 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "70586a5613b94e850f1f301257f05eae56f9befc8b93316fe7b48f36b713a0f8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C7.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C7.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C7.7z",
+      "contentSize": "324378653 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ca00c0b903553553154d382790c651175f3936282d9da0c35307c2ce8ab4a3c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/C8.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/C8.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/C8.7z",
+      "contentSize": "324505784 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "80c17f57082710df613fc23f9a1d41c8d05a88c4679ea0732a68ea01187082c1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/H1.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/H1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/H1.7z",
+      "contentSize": "797020960 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "377c04e3f3de9009f6795f5c88fdf25b19f6b9a958be29454601e81e79549f17"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/H2.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/H2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/H2.7z",
+      "contentSize": "325057747 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "925fe673dfdd530eab1c67496f0cf71e556e3db23b0abb649f510be2c961ef96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/H3.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/H3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/H3.7z",
+      "contentSize": "326258972 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7b0b04d080f05f3c60a99d757a6112836dabb3676e2c8f1b72a84453f09d54c7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/H4.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/H4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/H4.7z",
+      "contentSize": "325771641 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e8080216d5ff1644f87ffa63550d6ab31918dee3d88524142bd9e7e84e150cce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/H5.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/H5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/H5.7z",
+      "contentSize": "326337814 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ae60b1ede3b5bee7dd4163c25bf143c9e8f0f9feb5d06501a07835db10337a4b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/H6.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/H6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/H6.7z",
+      "contentSize": "324154691 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "00315bb2f3f9b07bfd3b74cf9fa08872439fb970e1265463d0562ff825ac0f9d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N1.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N1.7z",
+      "contentSize": "328226042 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c915cdc976df6a00a6b887a084adfa9fca795e6d713b962009c7c9380ad98a7e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N2.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N2.7z",
+      "contentSize": "324833742 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c9b0afbc5bc10aee07626fa9b696630e4cd20ece5721bc6f7a0c5649979524a2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N3.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N3.7z",
+      "contentSize": "324930882 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6a6e629d841a46b482aa47c7826342f257e7091c355402b258ea9e99cf177db8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N4.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N4.7z",
+      "contentSize": "326425001 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2ed674bb5b03f7ae345a3a370e7048ce624e04b6f12c85fe1d6c254f67ce948a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N5.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N5.7z",
+      "contentSize": "328526275 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0f3f55eac0109e685514a5bd67e6a8a4eb8f1ed220c6f6366b8dcb61bd136b40"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N6.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N6.7z",
+      "contentSize": "326141346 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1d4d4b5f446419959dd7c0c5aee6549a446656bc3f9ea0f6afa1e79225483d77"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N7.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N7.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N7.7z",
+      "contentSize": "324664495 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2cc2e2101e5089eaa4dc31adc4cfa831c974a48b831b69214372a9ae9415a287"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/bright/N8.7z",
+      "name": "MultiFi-HAR/1p/env1/bright/N8.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/bright/N8.7z",
+      "contentSize": "322995460 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "750809f701d408355914df8f0dd92390000fe3caca4e27e0da8fd2c551bb212e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C1.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C1.7z",
+      "contentSize": "2673235949 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0b29624968f6d763a0f1fe91f03309ee97d647807e34c1fd46be322e35fa70b1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C2.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C2.7z",
+      "contentSize": "943045493 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1e4b7c312d5128fb0aeb4468a3e9ee5bb0eb446a74ab656f831801c2dd93f1f9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C3.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C3.7z",
+      "contentSize": "945626724 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d02cbd2b4443bf4e5f25d6b9c125c3fb253f06b8e82556f8ec195ffb23096646"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C4.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C4.7z",
+      "contentSize": "944402262 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "dc9d7eb27075bc31a517717e86d73736e77a60221be4cf726657f1530c4c89aa"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C5.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C5.7z",
+      "contentSize": "955360057 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "13dbc267103adaaa5e70c121cf8aeb74131106c4aba1c3e3412275fde7984117"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C6.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C6.7z",
+      "contentSize": "958342131 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bff6ea3d353ac9b556c5c6882a4055ab3343f6d3b39d321083579a2fb306b63b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C7.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C7.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C7.7z",
+      "contentSize": "937983845 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b0ad27095db27387bcd998e06cebe83ab5be14e559885cc01248f85851317016"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/C8.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/C8.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/C8.7z",
+      "contentSize": "936638335 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c9fdcf1a6f6200134971f89c092c31fc0a490671c4b3f9b52b77aa3ff27f3b98"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/H1.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/H1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/H1.7z",
+      "contentSize": "3076618629 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "068f8c7deb7f4aa1a05a0e910619052b77f120f3b8fca12966fe5a31b93a8e9b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/H2.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/H2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/H2.7z",
+      "contentSize": "1253216062 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9e3656ebfc50dd9253b8e2314fb6a1cced47277069c9bc1e83be6b2efeec253f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/H3.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/H3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/H3.7z",
+      "contentSize": "951810005 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6459fa50c35ae036efb6e628815c8945b5a8a8bdc2b2744d06ce06c9f1896e0a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/H4.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/H4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/H4.7z",
+      "contentSize": "941758657 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7987e4673865e3f7529c9fea0b83aa266fa6de624609359c22aecb0ea09df58f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/H5.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/H5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/H5.7z",
+      "contentSize": "946499317 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a7caaae428005699ef793bbf148fa4cf3e73fe7ae4eb55b62f7186bc1e11b823"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/H6.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/H6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/H6.7z",
+      "contentSize": "981594871 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "58bb579b3aebfe342001a5e18f6d5f210cb58dd621802077b4ced0921cf5afb5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N1.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N1.7z",
+      "contentSize": "948940658 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d01ae0b903ccced1c8052bf147622b4af2593de76960dae30c72441bb7032a7b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N2.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N2.7z",
+      "contentSize": "933652294 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b9c41ae8281fd030aea44e7c80747b8bba2be80bee9946a3fa6de8b93a565d02"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N3.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N3.7z",
+      "contentSize": "934485225 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f984a159531063b74a7db5539057181b29153bedd8e45ba2808d0b1ba657995c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N4.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N4.7z",
+      "contentSize": "941195758 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0ac26dfa78500e679eae910dc5986bba8b4d7acf84cddf30864bb8d64ba8d822"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N5.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N5.7z",
+      "contentSize": "946466354 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ff672ca87d6718740c80f7ffd623b0c8dfd70ffe49a83c8214990c68eea4f59b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N6.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N6.7z",
+      "contentSize": "945341978 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9b0fbf5ad47a023d823b9f56419cf13c7e2f05e8c2c9475f0b29c75eac5c52c3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N7.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N7.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N7.7z",
+      "contentSize": "976969088 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f88e66c027b87264680259fb2ea5ec8f3caf23233b5de5232dc7c7dc274edeba"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env1/dark/N8.7z",
+      "name": "MultiFi-HAR/1p/env1/dark/N8.7z",
+      "contentUrl": "MultiFi-HAR/1p/env1/dark/N8.7z",
+      "contentSize": "933851867 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7c9d8e41763bddc522e0ce9d77759d76acdb0c5f015b5a76d946cba7fe1cea02"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C1.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C1.7z",
+      "contentSize": "2419155068 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a7f3b6dbee2b5df1dda8c0eb5cf5d0d0acc63c456225fad16a0b958d9270d12e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C2.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C2.7z",
+      "contentSize": "955672305 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "646c9b391914a1b81c071423dd9e890e8d4533bf2fa13aebc7fdecd76503e3b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C3.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C3.7z",
+      "contentSize": "1004666194 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d78c6320c36fa630a1809220a4c51c7d729262f664812ca42f9ff565754f1856"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C4.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C4.7z",
+      "contentSize": "964046927 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ee866ffc4e709c90ebb4d840b052b38e13a0b5a576356eab8ce305b93ee150a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C5.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C5.7z",
+      "contentSize": "969505361 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c14538ac7b92d11aff83bf6cf73ac40c54f4e7deafaa28cb1def031403b6e651"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C6.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C6.7z",
+      "contentSize": "969272567 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e708ba50cab7eecd3e0cb2e39f5eff16d4b3372839a4d9f694924bb316b594a7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C7.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C7.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C7.7z",
+      "contentSize": "966223583 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d6f5dcb0062390161e0d99df3bda9ecd76cf7f51aa696bf36cee4203c6839582"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/C8.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/C8.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/C8.7z",
+      "contentSize": "959729852 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f89d06623d2d653fcf3e7d6bb01d0ffe06960cd6743d4889255adec31d4d3c99"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/H1.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/H1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/H1.7z",
+      "contentSize": "2418065162 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0f68026add86b7a2c1ab42567729abda20fa088be3c7ba6194a90e9b687b8b18"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/H2.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/H2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/H2.7z",
+      "contentSize": "957210999 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "186ad514bbf5468359cc852408ec1eff00b7cdecbc9d96d3723362afb6fa8738"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/H3.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/H3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/H3.7z",
+      "contentSize": "1090592795 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "501ad54d1cbde9d6a6598b48a6416042ea00a1fb7ca3c9f1a7cd3dcba5e932c0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/H4.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/H4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/H4.7z",
+      "contentSize": "964103554 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1b98553aab5ba9fe17ef09a1e4b98376632c64f49df3c0caae86da5798d57f24"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/H5.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/H5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/H5.7z",
+      "contentSize": "962018112 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1a5a939d5f6f1aeafec4c8ae5cb12cee0e2f72ab25eaa11db4b0b0afdf8b2172"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/H6.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/H6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/H6.7z",
+      "contentSize": "960601748 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "41dfa97a1e8b73dac90142775bdb5858b0c3a1bf3ccd2a1c4150e44f3602418c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N1.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N1.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N1.7z",
+      "contentSize": "970325623 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "cef2b6324dd0bbed8bd5969629ecc737887171165b50e2d79cfed33cdd56fc10"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N2.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N2.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N2.7z",
+      "contentSize": "959455158 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "691f6bf21ff4e467e73d4ba09cfbff276ff65e9493dc056976977383d345c092"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N3.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N3.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N3.7z",
+      "contentSize": "960278852 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "02dd265c8fa260ddf50ae407ca1a65a10b7f787895ecf4bb37417f3c428060a9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N4.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N4.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N4.7z",
+      "contentSize": "964620355 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2cd4e7a7e74b42528ce8be58c7892df653ec7e6363c70642f2d4a5458c3c365d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N5.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N5.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N5.7z",
+      "contentSize": "969065176 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f8829034dd6742402c4a5f166740e45d7c6d9baa1e789ff85cc9fd1b401484ca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N6.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N6.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N6.7z",
+      "contentSize": "965174901 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ed6ea85f2b24b2c56a9e85fb86199e2de6edb88359bff6feacd9feeed18bc395"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N7.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N7.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N7.7z",
+      "contentSize": "955948452 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2ec3d0c73e8601b51c138b9bab85192a93df535d90fb68ca0c725942e8c24237"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/1p/env2/bright/N8.7z",
+      "name": "MultiFi-HAR/1p/env2/bright/N8.7z",
+      "contentUrl": "MultiFi-HAR/1p/env2/bright/N8.7z",
+      "contentSize": "957282965 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "902fd90e8d2582e9e1ab4ee6ddbd32666d0b21b65bd0b8a54d4559e4ad23f1d9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/C1+C2.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/C1+C2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/C1+C2.7z",
+      "contentSize": "323937503 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5b90a9c7b107d01b58a1fa009372e8e25ac587867f6104014ad7c77a08c4402f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/C1+C3.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/C1+C3.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/C1+C3.7z",
+      "contentSize": "323641745 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bdf8efb5dc2a2e6022c47b0117c95d737e3ceb5551eb3da8246ddaa18e054953"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/C1+C4.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/C1+C4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/C1+C4.7z",
+      "contentSize": "322536429 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f22d27fa1afcdd98f75dc69017b5e1185b3392d6aa7c8613c55b772b709d20da"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/C1+C6.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/C1+C6.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/C1+C6.7z",
+      "contentSize": "323997848 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b7003d2d953074f2d507b9e1c8986284e86da98b17ab60d69bb05a6309ea501e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/C7+C8.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/C7+C8.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/C7+C8.7z",
+      "contentSize": "322807252 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "8fecf035c7f3d627d35d57569e88e592b54582eadb05ef85d2c0c1a6fdcf1d2e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/H1+H2.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/H1+H2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/H1+H2.7z",
+      "contentSize": "322680496 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ffdd11c0f1c1c6be5915172d1a621f7c57c0838c3579f143149f47e2a59a165d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/H1+H3.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/H1+H3.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/H1+H3.7z",
+      "contentSize": "323086094 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6d94ccef6bc8a4da18cc3874c3353f72c9c4809916937b63e398581acc3c46eb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/H1+H4.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/H1+H4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/H1+H4.7z",
+      "contentSize": "322542734 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "66303f7842b0da7f4bc30132de6340e7ab1ff04572fb0bb7e81bc7723b80e1f3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/H1+H6.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/H1+H6.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/H1+H6.7z",
+      "contentSize": "322426754 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f298959e95bc5ece766038cd712b5901d753d2206c4ab7ef2a0c5b5a596b05e0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/H3+H4.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/H3+H4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/H3+H4.7z",
+      "contentSize": "322155742 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ccb883d5b3f04b6d65c72ba9078cf10e253384877effabcf6c04c7f76149b47e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/N1+N2.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/N1+N2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/N1+N2.7z",
+      "contentSize": "323726040 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f03f8a031097f4fedba76bcd39f4623e04cde7d2327544d5b305279eedc271cf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/N3+N4.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/N3+N4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/N3+N4.7z",
+      "contentSize": "322620595 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "91563eb028ea3dbea5392f450937514965393cb15fa2dcc64c1639aa853013e6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/N5+N8.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/N5+N8.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/N5+N8.7z",
+      "contentSize": "323734748 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "80226e8ca58c3a7db90b2a6fb1a7a669f2e2b3c14b5167adc3395548a940ced7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/bright/N6+N7.7z",
+      "name": "MultiFi-HAR/2p/env1/bright/N6+N7.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/bright/N6+N7.7z",
+      "contentSize": "324212556 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f02a04e2631ee0b62628d4f370d7cc3699e637d510602ea5300a52795e055186"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/C1+C2.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/C1+C2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/C1+C2.7z",
+      "contentSize": "1284799842 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2e852e5d27a8ff30aff2576979a8a00c8a81cfb64d89c9229efe052104f5b5a2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/C1+C3.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/C1+C3.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/C1+C3.7z",
+      "contentSize": "1372024625 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "582163e0d5ee7e50dab5f65a66c9680c4bb5912722c2440b7821138662182277"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/C1+C4.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/C1+C4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/C1+C4.7z",
+      "contentSize": "1329850582 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "739e2d8c76a1f00751bcfcbe39c91c23a79627a128be1a25540c8686227124bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/C1+C6.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/C1+C6.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/C1+C6.7z",
+      "contentSize": "1289373276 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ebf724db727504f887d2acc3049e23150a3c944e1e78cad67d0749c902a94f91"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/C7+C8.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/C7+C8.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/C7+C8.7z",
+      "contentSize": "1298537219 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "53cd96ed1c8f665dba33c229b27379809179ebc8d543492907c727551a7abb21"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/H1+H2.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/H1+H2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/H1+H2.7z",
+      "contentSize": "1295148885 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "47e284eea194972349158309942634b0aab107326ccb5eb176b13576a68f61d2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/H1+H3.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/H1+H3.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/H1+H3.7z",
+      "contentSize": "1279382032 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "884fefc7b032343e3bd2ae4c53ee99400227211fca84ac238a0a87dc4b1ec0a8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/H1+H4.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/H1+H4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/H1+H4.7z",
+      "contentSize": "1287758586 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "141a6a33a8c740c6f071db85a9e1bd38d8ec6c36e545d7933032d987e7992327"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/H1+H6.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/H1+H6.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/H1+H6.7z",
+      "contentSize": "1289902450 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b230d4e717fd7de700ce6dbded699bb5670f8bd038e3a09d2686e040a422ab95"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/H3+H4.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/H3+H4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/H3+H4.7z",
+      "contentSize": "1325134990 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3324692a104831a6570c83e81efa1d6540147d83650c1a6c023d6b1303d409cd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/N1+N2.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/N1+N2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/N1+N2.7z",
+      "contentSize": "1289717268 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "8fa747524bd8d827a4f8f698bd04905442dc953a5a17efb33fb0e1cc8156a76e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/N3+N4.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/N3+N4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/N3+N4.7z",
+      "contentSize": "1285316457 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "cfa19d4d02207ba43a66a72584c4e82076eb09de87a948a834d446429e3db7ad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/N5+N8.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/N5+N8.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/N5+N8.7z",
+      "contentSize": "1287268095 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "cc5ba21b54dfd5bb6253538701102a7bc6f16d173d7f8e008e15df217ece34ff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env1/dark/N6+N7.7z",
+      "name": "MultiFi-HAR/2p/env1/dark/N6+N7.7z",
+      "contentUrl": "MultiFi-HAR/2p/env1/dark/N6+N7.7z",
+      "contentSize": "1278256113 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5c5c9cb0fb9836dd57219bf5e893b4bcf791fcc202b12ddc9b58d89795963217"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/C1+C2.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/C1+C2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/C1+C2.7z",
+      "contentSize": "1290982815 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "52e918d04282dcfe5fda17bc9f8f9169621e997e0caf5561ad19c1265119df0f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/C1+C3.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/C1+C3.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/C1+C3.7z",
+      "contentSize": "1291695496 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e51077a2d60ba2e004810d0b731330879de08ee8dd7bcf0864bc5de3ed70763f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/C1+C4.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/C1+C4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/C1+C4.7z",
+      "contentSize": "1290722750 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "35c0ec5adbe5befdbd1227c37786dbecd48caef344699e5805970f65001c9357"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/C1+C6.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/C1+C6.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/C1+C6.7z",
+      "contentSize": "1296023378 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "58c355904f55a59d76f437f3ef77d7cce8202f814e689b538103961ca54ef587"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/C7+C8.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/C7+C8.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/C7+C8.7z",
+      "contentSize": "1284892657 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f542b3895226ed25b2d81a26f25e0699aec22e133d87701362e715e09a6191bf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/H1+H2.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/H1+H2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/H1+H2.7z",
+      "contentSize": "1272366687 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "51936335a0793907af83171b809dc0aa7469c73e9502ee75c9f1bdbb5d9e3d8b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/H1+H3.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/H1+H3.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/H1+H3.7z",
+      "contentSize": "1287787770 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1e28a2c7c3c6e7457d3e4a46b76921ead5a37352a5b5025ee0b51da2423fede8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/H1+H4.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/H1+H4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/H1+H4.7z",
+      "contentSize": "1288276953 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "72bc751405245fa0f2cd42d164dfa29e5469fdc7111c0c3e76c519b5d9708fec"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/H1+H6.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/H1+H6.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/H1+H6.7z",
+      "contentSize": "1288947218 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "65f4ff85f73e8a634d6bb8f5861ca579081e0b5bba3f96a587379115dd648542"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/H3+H4.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/H3+H4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/H3+H4.7z",
+      "contentSize": "1283048267 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "79f959e23749e7ddc7579f8847272f6094b826864a120123fd6392996f94e2d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/N1+N2.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/N1+N2.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/N1+N2.7z",
+      "contentSize": "1285096614 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3715421185c4d1181255b3ed68cf39cc55a4ac34b83800b1b22d74f57547c2d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/N3+N4.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/N3+N4.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/N3+N4.7z",
+      "contentSize": "1278345668 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "de548938fb447561e498daf43f8341e7cbf4264ee6c1f5e42f8e0d41cc36434d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/N5+N8.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/N5+N8.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/N5+N8.7z",
+      "contentSize": "1284413657 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f040ca1b3be7e3beedd2666e064578e4ca6d111ec7f5186f20eaeb5e8ceb077e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/2p/env2/bright/N6+N7.7z",
+      "name": "MultiFi-HAR/2p/env2/bright/N6+N7.7z",
+      "contentUrl": "MultiFi-HAR/2p/env2/bright/N6+N7.7z",
+      "contentSize": "1282894288 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "53a618e721196a781ba050ee55f1b9072ba5253cc8db476b88f0f3a2e55df2c4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/C1+C3+C2.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/C1+C3+C2.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/C1+C3+C2.7z",
+      "contentSize": "325053554 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "137c6e97f3a1408f0cdee660eaacb240934936cf9aa0bd0a5b69ffd7ed61f0d3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/C1+C3+C6.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/C1+C3+C6.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/C1+C3+C6.7z",
+      "contentSize": "364567663 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2f0412fba891381958f4d139cdae3066ba3bb6e6a42bf13680991bacebd80481"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/C1+C4+C5.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/C1+C4+C5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/C1+C4+C5.7z",
+      "contentSize": "324358636 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "14e03f712ae7ffb28b0dc043783b261083a6e5c873945e69a41bd672b2df1b23"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/C1+C7+C8.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/C1+C7+C8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/C1+C7+C8.7z",
+      "contentSize": "324148660 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1bab16322b6fc4875a0ebea0bfce958ee427f56ad247a74da79b887fe975ddf0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/H1+H2+H5.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/H1+H2+H5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/H1+H2+H5.7z",
+      "contentSize": "321441231 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "8decd908d0b43f2d6e936d5cf95b0f64c88fe2938833b186547c0d9be795565a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/H1+H2+H6.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/H1+H2+H6.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/H1+H2+H6.7z",
+      "contentSize": "322474745 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "561f0e15b6874b8c7ae34da6938251433fbd13b0cdd7e2f11e0936d849f35086"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/H1+H3+H4.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/H1+H3+H4.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/H1+H3+H4.7z",
+      "contentSize": "321593617 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4e0c8f7e8ea8a1e3759167befde451149b955536009e92a0cc2758b8ba450e49"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/N1+N2+N8.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/N1+N2+N8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/N1+N2+N8.7z",
+      "contentSize": "322846556 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e4886b91d2e622bb556025669764255f1a3b2c84b311ff51cec453d4086ffea7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/N3+N4+N5.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/N3+N4+N5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/N3+N4+N5.7z",
+      "contentSize": "322989178 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "87ff0da432d1a94c6c802efa8f6ec39c99e67b607ba2a75cfe2aba4b99cb1842"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/bright/N6+N7+N8.7z",
+      "name": "MultiFi-HAR/3p/env1/bright/N6+N7+N8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/bright/N6+N7+N8.7z",
+      "contentSize": "322318994 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c1a5e7274464043118565411c13b355e0932bc04bd3a7c3f548cf64eceedb3af"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/C1+C3+C2.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/C1+C3+C2.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/C1+C3+C2.7z",
+      "contentSize": "1281117390 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d0efe39e1736200218a4ea4d2c3d67e09773975690d50c6ef4c2639b1fe01e96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/C1+C3+C6.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/C1+C3+C6.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/C1+C3+C6.7z",
+      "contentSize": "1283381050 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4e458d7a14ffbc99d1dec08f0fa9da2af31b48a78b4de6ef1f8830bda4ef2e51"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/C1+C4+C5.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/C1+C4+C5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/C1+C4+C5.7z",
+      "contentSize": "1284358594 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "eb06b776a2cf5f673bbbaf31394f26df5435b21a06171337671f2f1b785c2b05"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/C1+C7+C8.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/C1+C7+C8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/C1+C7+C8.7z",
+      "contentSize": "1275277449 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "441b17175e88689e57eaec82c6104fd5bfc4096f33d49e7a5e38bafe3def8299"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/H1+H2+H5.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/H1+H2+H5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/H1+H2+H5.7z",
+      "contentSize": "1287504575 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "00c2547c5d97f185e3286f8a4ba02c47bb6e4ba7da41a459058df6839a78642a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/H1+H2+H6.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/H1+H2+H6.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/H1+H2+H6.7z",
+      "contentSize": "1278130853 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5ae0e7f91fc585dd2c82d89bafc6df67d7afb609d3c5e06bf2afdbfe9df010b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/H1+H3+H4.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/H1+H3+H4.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/H1+H3+H4.7z",
+      "contentSize": "1278289097 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e608d55f02eb7c4208894e50d34c116f2dfb1a8b48500165447cb6e6db309d48"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/N1+N2+N8.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/N1+N2+N8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/N1+N2+N8.7z",
+      "contentSize": "1285189794 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "806675f6e0b2067ba5c41d78a95990cdac2a9b81d728b2a4b4bcc1ebfd056c8d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/N3+N4+N5.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/N3+N4+N5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/N3+N4+N5.7z",
+      "contentSize": "1280426457 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "de87cefa429826b3df3d2e1c86c89d8adbfbffe9da602ef43546cd7b892b1296"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env1/dark/N6+N7+N8.7z",
+      "name": "MultiFi-HAR/3p/env1/dark/N6+N7+N8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env1/dark/N6+N7+N8.7z",
+      "contentSize": "1279168313 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9d6b729d614e512c6b53cfcdd962fb62bbc2500d76ed31baf8f0724b22fe434e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/C1+C3+C2.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/C1+C3+C2.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/C1+C3+C2.7z",
+      "contentSize": "1275529733 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "66302d1d3258d5140e3f06bc0967e39ce367dc2b1519a7c840b3950e866dd8f1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/C1+C3+C6.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/C1+C3+C6.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/C1+C3+C6.7z",
+      "contentSize": "1279515392 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3de958b7c80a6f3b7b817f7134274e14b736ed790bd05839741ff4bd6b6c0fc6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/C1+C4+C5.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/C1+C4+C5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/C1+C4+C5.7z",
+      "contentSize": "1281650803 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "baa44f792320d4dfb85176d7d143865a5fff51bd942623d2c9f5071d0abe4640"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/C1+C7+C8.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/C1+C7+C8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/C1+C7+C8.7z",
+      "contentSize": "1312010673 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f93fd207eb172adc5884968fc315dc19ec0757d58c032508605a10796c68abcc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/H1+H2+H5.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/H1+H2+H5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/H1+H2+H5.7z",
+      "contentSize": "1277861377 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f01a898250300544072d399a686108a31c968b919d4483bc4388d20b6aa4f956"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/H1+H2+H6.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/H1+H2+H6.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/H1+H2+H6.7z",
+      "contentSize": "1279185898 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "baf9187f71006299762774eacd72db1602966e5f21594a94d86a0a1794a9873a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/H1+H3+H4.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/H1+H3+H4.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/H1+H3+H4.7z",
+      "contentSize": "1271475060 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bd85bb7dbfe0af110bc6902f5d33fed95ed8901c45e4f9fce17c747ce32b1f35"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/N1+N2+N8.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/N1+N2+N8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/N1+N2+N8.7z",
+      "contentSize": "1276239325 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c8489ce82a2d1e9ff1eef82938be1d657c605aea0cce95dda4ffdd9dd5307fdd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/N3+N4+N5.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/N3+N4+N5.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/N3+N4+N5.7z",
+      "contentSize": "1320818248 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "678215c735b9d0641e24628d6ec226e1de053a281d6392acaf0960e40fc94c72"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR/3p/env2/bright/N6+N7+N8.7z",
+      "name": "MultiFi-HAR/3p/env2/bright/N6+N7+N8.7z",
+      "contentUrl": "MultiFi-HAR/3p/env2/bright/N6+N7+N8.7z",
+      "contentSize": "1311384181 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b81af819a882ee1080df35c417f11f4405ff02f874d2bccaae7af060b2c238a6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C1.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C1.7z",
+      "contentSize": "836092085 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d8451a9c3171f705be232cfcd96a034b76c78f5342c1f38b32ebef8210d7b753"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C2.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C2.7z",
+      "contentSize": "332797867 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "960abaf11201967f03035ad7a3728b2fe9fbcee2dc539e005c7ff699169e9d0e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C3.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C3.7z",
+      "contentSize": "333608944 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5e9a6c1e1d902d34d8b8f0a8ac3978c66b3e258afcd3105d10f886ccd76aaadf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C4.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C4.7z",
+      "contentSize": "333605618 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "57a7f195d92faeb6b3bc57fa80caafd1b395de43df6f8cb13e932eac58066692"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C5.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C5.7z",
+      "contentSize": "334468975 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "fc12d0944bb349fa38135d4e6df1f71f4141b7dc6e3670e2b1214d328d9b58f4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C6.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C6.7z",
+      "contentSize": "378230161 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "fcacc5b7f74e6bc21a6803011d3ad72898059d3b6e1e57425677fc60e6d1140b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C7.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C7.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C7.7z",
+      "contentSize": "333206958 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6488284f2833ada05a3ba843f213dce16e7060a478c912dfc788ef1387d30fd8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/C8.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/C8.7z",
+      "contentSize": "333297399 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "fc1ac86eca87152151aa56011e6757784b49e250641aa2700f09f0de2e4b064c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/H1.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/H1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/H1.7z",
+      "contentSize": "834101561 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5970239133f3b0b6e1d15b6856bb77cc2df46d90a7e0bda1db8f533e783fb7a3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/H2.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/H2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/H2.7z",
+      "contentSize": "333406421 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f59b3cf3578bfe4553eb8145dfc06ef5f5fc0af8593045a350d92645e7a50a35"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/H3.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/H3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/H3.7z",
+      "contentSize": "334408318 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "90a258c227e84e74c248d6dc70548feace73700b9cdb6707345399cd48e6126e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/H4.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/H4.7z",
+      "contentSize": "334589069 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c587874ce9839e989cbc46f2c18f25dc0c61ceb5834e69845f034d92897c891e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/H5.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/H5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/H5.7z",
+      "contentSize": "334108837 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d45e7e7e5d2f835af37ab944cf61323cd56897aac6de5108e37b7f748ebb0160"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/H6.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/H6.7z",
+      "contentSize": "334365637 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "08d2cf932b65d7abba5eddb595c5c59a6330f7d9afabc0ff012c41b45a200a15"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N1.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N1.7z",
+      "contentSize": "335422269 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0add009dabca3629886a8ca2eb16cd5fe0312f338c529fae10cb204e078e48ad"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N2.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N2.7z",
+      "contentSize": "333904338 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0968e76b09df1408b6ec60e23ae0b52328ee04641193eadf3992cbc119c33bca"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N3.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N3.7z",
+      "contentSize": "333185895 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2defdde860030ef8b80ebaa87c27fe83974788a437012f781961c79491b5bccd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N4.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N4.7z",
+      "contentSize": "334149807 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a313892bd97865dfcacd171c27b3ebcf662378608f594bf4db1994b81839a509"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N5.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N5.7z",
+      "contentSize": "334414929 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0c81079118859278a160028ca1471388c0aac5b35096715f405b13b3697cc467"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N6.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N6.7z",
+      "contentSize": "333372480 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e3fcb43bf0083a7d0ff7998de0e59abbdbacae14e4eb0da9aed22e46a104e90c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N7.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N7.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N7.7z",
+      "contentSize": "337360890 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "cfe78c89245dd36b908e2a95e13d6a3abd68c58f98f48899e87bf227a147f349"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/bright/N8.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/bright/N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/bright/N8.7z",
+      "contentSize": "336570161 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6c8710a1211fd1141d5a01405544912e1d4f8dcdfaf67d23fafffe101818df87"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C1.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C1.7z",
+      "contentSize": "2829186584 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1f8c37f0c61829ac96f4225aa5d6d128bf3408cb6abef3a6c246cd5187b9ab83"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C2.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C2.7z",
+      "contentSize": "996168346 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3be54b9930d154efe6ad825395a52fe38632d14c5d3e4655f5b660847371e408"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C3.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C3.7z",
+      "contentSize": "997314017 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1f0c376ed869bdbb33d021ef658df7b46fc598b733406eaed39da12c7e9a9067"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C4.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C4.7z",
+      "contentSize": "996487115 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a5772494fb3db1af3c6c3ace89489c4de26a49dd7639047fd599a2dfe463d205"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C5.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C5.7z",
+      "contentSize": "999326570 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d63987b7e583dbcaf4bed991b6567f6643c67028a180059fdde236d53967b0e3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C6.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C6.7z",
+      "contentSize": "1002652993 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e7d9dbea3dba49ab3c17cef0c251aae5ddc7eb77ab5c0a88a6bf7026ff4ed5e8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C7.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C7.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C7.7z",
+      "contentSize": "994467272 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b14ae80c8903cd57c39350dff582f1c5eb5a1ff0f45aa3974898ec95dffcdc22"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/C8.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/C8.7z",
+      "contentSize": "998632689 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "157ae14934c0df625693cc8e46cd93028b2a52fd9ad479187c0e26f4a7314fa1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/H1.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/H1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/H1.7z",
+      "contentSize": "3238517989 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "89f49833bd9fe1e11cb5b53273c3cfd065880ebe5cb41f7be68dbe5977c86e3c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/H2.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/H2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/H2.7z",
+      "contentSize": "1331954623 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "61fa8ef2a79451c6e35a6f6943398c0ca4be3a2d0546fd8e016216f05bcb8b55"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/H3.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/H3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/H3.7z",
+      "contentSize": "998174369 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "02e2f704d5ce95bcdb25fa4082aaea65469a6e25f6d047eb14e676ad7853527e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/H4.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/H4.7z",
+      "contentSize": "992392176 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7b618e76cc36fdaa5c10e85397fbb4df25afaa6a255be78ce80a9c0aaed12cff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/H5.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/H5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/H5.7z",
+      "contentSize": "994704239 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "839effd6bc4112f3c80326badca59d528853ce4f6bd3ae8eab2dede79eb67153"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/H6.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/H6.7z",
+      "contentSize": "1037879361 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bfedcf1a7d0a6d493563e7823f5a448675dae2576952a3a8ac8178845c949088"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N1.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N1.7z",
+      "contentSize": "999694457 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "52a0dc3daa85f98bc54deebb249eb6a58f6406370da11485c2a1e20f92856e4c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N2.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N2.7z",
+      "contentSize": "997490405 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "475697e1d38497adc33ffee44f3202a27796e17124e0d0f191cb2632dcd961dc"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N3.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N3.7z",
+      "contentSize": "996717240 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "8df55db678daa83bb7965f68b094b6abd55909e1aed02fedbec317026359341c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N4.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N4.7z",
+      "contentSize": "997735800 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bdb2c162abd52c8c17a27b7d629e9ebd197e038811d16df975b4acddc9ffa371"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N5.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N5.7z",
+      "contentSize": "1002658994 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d606778113ccddd001110110992f5fcd53a93f8ff34c70083480f3ea0c0c33b4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N6.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N6.7z",
+      "contentSize": "999715746 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "fff9ff761ce54b89f485dc56d1edf9b75155701b3b7f39ad4a207e1133a89f99"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N7.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N7.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N7.7z",
+      "contentSize": "1039546985 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9cf7726509b2393e7813b869ba74d98999486da16927e85610e71c46a8a37989"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env1/dark/N8.7z",
+      "name": "MultiFi-HAR.npy/1p/env1/dark/N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env1/dark/N8.7z",
+      "contentSize": "997118378 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7075243d5eb86dcd002ca89bbd9fcb6d395387b869b2e1a90dbbdc36e29d02c5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C1.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C1.7z",
+      "contentSize": "2539879931 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "fc511c0e84588fa0053bc24d0eaf39c76da39035140352623afbdb553abf03d4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C2.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C2.7z",
+      "contentSize": "1011749509 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "28f6057601f20c772d416159092d0691eac27b85c755428cfb5e0b48cd579554"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C3.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C3.7z",
+      "contentSize": "1060295409 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bc1c377e1463f9501ff80d50f975d747f323823251aee781789a1950ac29f1ce"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C4.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C4.7z",
+      "contentSize": "1015054367 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "350172b629ba8610b241bc2658bdec3454904c55f92d1f29e12ae88782e6e974"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C5.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C5.7z",
+      "contentSize": "1017168031 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "945160a138c0341e391aa399d5eac8e73603401bea83371f9bb725e77790dd47"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C6.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C6.7z",
+      "contentSize": "1015091649 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bf9a3c7f4a867acefd873de7956c8a0d0b4609531ec815ea5f366d1851acaec9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C7.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C7.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C7.7z",
+      "contentSize": "1016367653 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1d401105fa8c0f334dabb3dcf26e3e51e2ae9dcba10aae55c48dbdd73ba0fe9c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/C8.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/C8.7z",
+      "contentSize": "1014018572 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "716c5bef56804b376c2dd8c0cbaf9f3d166f7e6ba7f537518ff4d94a2e57e5e8"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/H1.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/H1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/H1.7z",
+      "contentSize": "2538776870 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b7f6093389687b32eb20bfa12229e31b5afa70959671264cb5fde30247d4da4f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/H2.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/H2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/H2.7z",
+      "contentSize": "1010621676 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ccadc60639e128f5604aa3b35f8b458ed13a7b64129c2f07951f0211181e57ee"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/H3.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/H3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/H3.7z",
+      "contentSize": "1141220742 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "312bbbab92a591cf9df9bf3618548b790b7a2a65621410e07cd0e9c167179382"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/H4.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/H4.7z",
+      "contentSize": "1011967001 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1ddf0d5cfbfc8c925de40036cf584f164ff155053a6db7e528a0061cab841ba0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/H5.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/H5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/H5.7z",
+      "contentSize": "1014663611 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "17b8e3294d939c317a6ca0987bdd8e95763edd214f01ccc0f45ab863fb1efc8d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/H6.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/H6.7z",
+      "contentSize": "1011415180 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "fa5b5b67e6c9ff647548d39e25b8688e963ea5e4b51e5d25d311e926bbb74306"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N1.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N1.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N1.7z",
+      "contentSize": "1016505120 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3822b9efad5e677cc50a56567b0d2d17b408d46cf3bd6f68f24b85c2f65ab92e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N2.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N2.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N2.7z",
+      "contentSize": "1014233531 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "31b0c02c14115f34833d7a607c5457c0a0266e1df5ff497712037112585a290c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N3.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N3.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N3.7z",
+      "contentSize": "1014619105 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "61a0f0b84faf69ee5d7ed5bb343136faca57183ab5d20a7a82dffe6d574efdb6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N4.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N4.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N4.7z",
+      "contentSize": "1015770895 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4123398b01a896b582336ef3918232acc75ac0940a9843a690d30fa5e6ee940b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N5.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N5.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N5.7z",
+      "contentSize": "1017438166 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "8b974266f804aa2dea94f23d24aeb40b2f04dcf3176f0289018b980f34d7ebe5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N6.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N6.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N6.7z",
+      "contentSize": "1016439110 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "910eb50d481f1be635943eab11b575af4009109ce1e7ac5fa1d56416eb71cc5a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N7.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N7.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N7.7z",
+      "contentSize": "1012779005 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0aca0ff28f123e31ffd213179187c7ffdaccdbab7184ca99fef9ceb831db80ff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/1p/env2/bright/N8.7z",
+      "name": "MultiFi-HAR.npy/1p/env2/bright/N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/1p/env2/bright/N8.7z",
+      "contentSize": "1012846186 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "403c462300b2c8cef1f6b9b6940fc04b40a4cf18a8275e21ac077333243e6a6d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/C1+C2.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/C1+C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/C1+C2.7z",
+      "contentSize": "335638821 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "94f20588ae4a44cc4df326aa50ec5211b0e4fc887b8a44e9c6187c87ba587d31"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/C1+C3.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/C1+C3.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/C1+C3.7z",
+      "contentSize": "335876204 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e3cf538789ebd9a9b8f06a342bd6f2218a3d83ce2857253e68b9d95cf49548db"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/C1+C4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/C1+C4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/C1+C4.7z",
+      "contentSize": "336179567 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "51945e7c26f282a128484cfcc736c762e425795487cc9348101cb13804481439"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/C1+C6.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/C1+C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/C1+C6.7z",
+      "contentSize": "335935506 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5bcbe7e54dec74039a36afd24638bfe849759d1a9fca49c7090d9ea4f0724fc9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/C7+C8.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/C7+C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/C7+C8.7z",
+      "contentSize": "335288876 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a4cb44cb8f67fd5a2712293e571ef9d8afd8aa8eb183b93282ae4333ee3f41c6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/H1+H2.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/H1+H2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/H1+H2.7z",
+      "contentSize": "335548589 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9306e36b8472d51248fe19c47bfe67d6ddfa070fa85bfcb9c4fcca8699167a04"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/H1+H3.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/H1+H3.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/H1+H3.7z",
+      "contentSize": "336048660 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "111719f71d030184aec35ea075ea77e6a738b1d0dd93d66ed9774992fbe34efb"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/H1+H4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/H1+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/H1+H4.7z",
+      "contentSize": "335664001 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3f7425297e1751e1c79ff3da0a17cb3c80a0e6b9c9b4f5867365005b5e175bcf"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/H1+H6.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/H1+H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/H1+H6.7z",
+      "contentSize": "335675221 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "361acd1c4e66bc28a9fbb2b5895c51c2c1aa3476288b4247160cc9676b4e7bf2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/H3+H4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/H3+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/H3+H4.7z",
+      "contentSize": "334957204 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2d1c48a7e2b1a4050d7a867f8bb818171de8998e0bed51ff13e0cda70d116df6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/N1+N2.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/N1+N2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/N1+N2.7z",
+      "contentSize": "335615449 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d1ccdd5b5fc7d011cec8adb2722dc0f6d1c56ca461bbdaa2ff7c950385be791f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/N3+N4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/N3+N4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/N3+N4.7z",
+      "contentSize": "335497431 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c68ac72e7a82b0d496b1e7ce139d41947f951105a46f9ca8b31a324e1df90fe3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/N5+N8.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/N5+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/N5+N8.7z",
+      "contentSize": "335636522 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6fdaa8cf4264b73d96e9068317eab4b0961250432e268bc4ea6bc4da94b8f4e0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/bright/N6+N7.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/bright/N6+N7.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/bright/N6+N7.7z",
+      "contentSize": "335467663 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "3dbc9c549ce83edbebd17a374b305618c5366688c62a0492d2af7793f3d34a47"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/C1+C2.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/C1+C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/C1+C2.7z",
+      "contentSize": "1342044690 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "76d4886dd3d11f444112d8018516b9c8ccc4da570eac0201b8a4d8ce181a902b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/C1+C3.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/C1+C3.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/C1+C3.7z",
+      "contentSize": "1425924592 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "91a1bb86a03173885f4e5c8e54678c61834064e16ae69a43b76a798c212f9253"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/C1+C4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/C1+C4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/C1+C4.7z",
+      "contentSize": "1383096128 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ed9f4e0936bcf7dcd6cf9c52b080a8097cce54a22259bf8d65c699fa4e3f78f9"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/C1+C6.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/C1+C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/C1+C6.7z",
+      "contentSize": "1346222961 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7f9e62ba6a93b977a63c55459b9537dc40696e0eebfc31b28f238a7a51a7ff5e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/C7+C8.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/C7+C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/C7+C8.7z",
+      "contentSize": "1334927936 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b67acad5cbaccdd6115a5f31c1e6e5fedc7de7ae2382d5c6f2a489f32895384d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/H1+H2.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/H1+H2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/H1+H2.7z",
+      "contentSize": "1340408783 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "caa26f03922f61181fd151de8064e2c617edb81655b33f7acaa039016dfd7260"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/H1+H3.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/H1+H3.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/H1+H3.7z",
+      "contentSize": "1345438501 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "926f188244b6c1e6c9b7c04492f47b13ad8afca07ca8c96bbbbdfe0aa7619bf3"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/H1+H4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/H1+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/H1+H4.7z",
+      "contentSize": "1345890494 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4013e9d3bf56e8b7a9ff9ecaca225810dae591dc30910a9aa1c676c921bcb2b2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/H1+H6.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/H1+H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/H1+H6.7z",
+      "contentSize": "1346134750 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "8a104785e7f05864e269a38adaffbeb70de497fe18bee234216c527532247538"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/H3+H4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/H3+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/H3+H4.7z",
+      "contentSize": "1382746693 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "548cc75950ada9920c76a0f87bf0bc24fe383c1d82504b9dbfa011563f199977"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/N1+N2.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/N1+N2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/N1+N2.7z",
+      "contentSize": "1345621950 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "eff9547bc5a2fcfd450e7910384ae27d4418395e75d6c312183cb6eeab2997f6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/N3+N4.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/N3+N4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/N3+N4.7z",
+      "contentSize": "1345449798 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "58ccfd2bbb465eee506451a841d95de76cc3af406c8894087d4ac4189beeca9b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/N5+N8.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/N5+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/N5+N8.7z",
+      "contentSize": "1347055330 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7dbe0e1f4cc493876d927b81bd02b544089638ac3275b67b9693b93d1170caf2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env1/dark/N6+N7.7z",
+      "name": "MultiFi-HAR.npy/2p/env1/dark/N6+N7.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env1/dark/N6+N7.7z",
+      "contentSize": "1338744006 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6cb857b0f54c2b918bf083fbb4cd3ed5835e072c9e54aef8f26c1183bd711032"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/C1+C2.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/C1+C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/C1+C2.7z",
+      "contentSize": "1344127440 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "acf482e061d74c966ee452b08b4f4e2279893485105dbd84f57541e74bb70321"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/C1+C3.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/C1+C3.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/C1+C3.7z",
+      "contentSize": "1343928216 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "01a14bbe9078631452977aa8ee0ec50fdd1bc2bfd07c67f1bbce969339ed980d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/C1+C4.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/C1+C4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/C1+C4.7z",
+      "contentSize": "1343873332 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "297b0a24a27c6402d2338d93fadeed90e79e2912751c838c959989295e5b7b86"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/C1+C6.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/C1+C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/C1+C6.7z",
+      "contentSize": "1346085791 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4c50bae1899b46682b94f45ffba88af23bd71795c6e7a756a105359f0b2ac650"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/C7+C8.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/C7+C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/C7+C8.7z",
+      "contentSize": "1340532392 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "d0c3cdd375acbc4241d873c380700829e13534cc515a6e27d964ebb63e2aa673"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/H1+H2.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/H1+H2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/H1+H2.7z",
+      "contentSize": "1325361074 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "afe931a7fe4bc195dc6931ad3cef72e1e91cd1845689b0793282c31833708770"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/H1+H3.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/H1+H3.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/H1+H3.7z",
+      "contentSize": "1342987641 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "09db2689381a53ce062aa5b45c7b593c3611858a91cb07f3589490f0d7e255c0"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/H1+H4.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/H1+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/H1+H4.7z",
+      "contentSize": "1344665573 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e7f09c4dded5bf55516252e77bb4a1f4467f5e33e3d943b114edf7274f766a9b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/H1+H6.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/H1+H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/H1+H6.7z",
+      "contentSize": "1343248408 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f5ac8d58d031e3a778310e2e48605cd48f596ffe7a84bb90d7a5fee5d753f3d6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/H3+H4.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/H3+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/H3+H4.7z",
+      "contentSize": "1341598795 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4ae6b2273522467e0d6a1aaa032105224e1cd86ee0f9f1fb98af06a16660c6ff"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/N1+N2.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/N1+N2.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/N1+N2.7z",
+      "contentSize": "1350031686 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "17c9022f755928cfda2afca174a8a0d9911077785264ab790208277fd90a1d88"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/N3+N4.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/N3+N4.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/N3+N4.7z",
+      "contentSize": "1346208274 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a511cfa09b7e89d79f7669bbd8de906d9ae454a7659762041c541919bfed7ffd"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/N5+N8.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/N5+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/N5+N8.7z",
+      "contentSize": "1350452900 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "4c0d30fa112e8b83d5bd08dce3f03db377bf81d1baf03c82de7f6fa68d0faf85"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/2p/env2/bright/N6+N7.7z",
+      "name": "MultiFi-HAR.npy/2p/env2/bright/N6+N7.7z",
+      "contentUrl": "MultiFi-HAR.npy/2p/env2/bright/N6+N7.7z",
+      "contentSize": "1347217165 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "15fd9b5ecd4ec60a6658fea92fb1be941268d6de4561c9bde1f089ecaf2effe6"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/C1+C3+C2.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/C1+C3+C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/C1+C3+C2.7z",
+      "contentSize": "336607961 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5eeb74996b49783e91de2cf1fa57e4dbb93a47f297d399b36b541ab3db012082"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/C1+C3+C6.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/C1+C3+C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/C1+C3+C6.7z",
+      "contentSize": "378610531 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "b525f8ed3b9230b49997222db95b68ee57a759802c11e7d2f8ed97779ba057f7"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/C1+C4+C5.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/C1+C4+C5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/C1+C4+C5.7z",
+      "contentSize": "336577328 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "edf7342385cfde77dae9c7e01d4ff27de90ef481950865fdcddbdbe4d02dfb81"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/C1+C7+C8.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/C1+C7+C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/C1+C7+C8.7z",
+      "contentSize": "338137111 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "22a67314c9a4108642d039685d9b5d971632c150d1360ed6edc80440ff43cdf5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/H1+H2+H5.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/H1+H2+H5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/H1+H2+H5.7z",
+      "contentSize": "335438643 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "bfcf1bbd9281286cf6a360e5eb5de955c9a0ec71ee7278f037b1d123417e9155"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/H1+H2+H6.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/H1+H2+H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/H1+H2+H6.7z",
+      "contentSize": "334862092 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2f63c75a73311faf3dc43a10d2314edfde2a59b0bba9ea85480903851c77e796"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/H1+H3+H4.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/H1+H3+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/H1+H3+H4.7z",
+      "contentSize": "334170177 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "810d31b4e6a2af67a34045be2eda395af517141cbd71ddc4a5da03367ef851ea"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/N1+N2+N8.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/N1+N2+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/N1+N2+N8.7z",
+      "contentSize": "337135618 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "ab42bc8497b96101b6910038c35e0f75a18c08594205fce57820be648c5a855c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/N3+N4+N5.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/N3+N4+N5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/N3+N4+N5.7z",
+      "contentSize": "336411816 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "c4a22e7eb235bf085240eedf3cadb95ae8636f6d4f1f2a514fd45ada1e26b873"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/bright/N6+N7+N8.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/bright/N6+N7+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/bright/N6+N7+N8.7z",
+      "contentSize": "335882209 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "5b0d02708234a08b319f6a234eeeb72cf7dd842e03e4fb6fd3d3da08ecb1c606"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/C1+C3+C2.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/C1+C3+C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/C1+C3+C2.7z",
+      "contentSize": "1335417243 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6d42d14d357b31bbe7fec733c3bb5e4d3dea87f298e17d7dfba47eda22411b4a"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/C1+C3+C6.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/C1+C3+C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/C1+C3+C6.7z",
+      "contentSize": "1338731338 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0fab98eb76f8d892e788484c2b09d550884bfa64a720ded38477a63289643c4e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/C1+C4+C5.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/C1+C4+C5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/C1+C4+C5.7z",
+      "contentSize": "1339212395 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "38624bd2e5805dad729b9f822ba7f1c17ca8926de5b987975087dd669bd92888"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/C1+C7+C8.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/C1+C7+C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/C1+C7+C8.7z",
+      "contentSize": "1337322643 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9718a4041e74a85a3da97ce8cf8eab8d6e83bc0e4fb546b272b1ea9f1d8ebe32"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/H1+H2+H5.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/H1+H2+H5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/H1+H2+H5.7z",
+      "contentSize": "1342837142 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1a96788196566e7b43406161dd8fced52a30f8b0f559e5d3656babfe31011749"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/H1+H2+H6.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/H1+H2+H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/H1+H2+H6.7z",
+      "contentSize": "1336184327 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "e9959a064164faf39f28cf2580959711c4d8caaf79d2de2155ca6a1309e7ed93"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/H1+H3+H4.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/H1+H3+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/H1+H3+H4.7z",
+      "contentSize": "1336392697 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f31b27a8ed54d1c50f204dbcf13c3b49c1d0827e687f19ac89736bd5f6ae1c95"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/N1+N2+N8.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/N1+N2+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/N1+N2+N8.7z",
+      "contentSize": "1335188794 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "19b86c45226a333216625bae7d5503105e39272868cfa267486bdffe6375df4d"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/N3+N4+N5.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/N3+N4+N5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/N3+N4+N5.7z",
+      "contentSize": "1337616185 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "f4f3fcfcba0c6df7c989dd20136846b6f58e0ecc132dd29b827cc51eddbb7984"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env1/dark/N6+N7+N8.7z",
+      "name": "MultiFi-HAR.npy/3p/env1/dark/N6+N7+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env1/dark/N6+N7+N8.7z",
+      "contentSize": "1341006960 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a7fdffff668eb77e61332e30fbec0f4b380541d2886c6400aa90fd2340de072e"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/C1+C3+C2.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/C1+C3+C2.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/C1+C3+C2.7z",
+      "contentSize": "1344487164 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "1bcb256bb30c135835c7e6010a5b9866207faf0bd8d8d6cef251d67fe01ed553"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/C1+C3+C6.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/C1+C3+C6.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/C1+C3+C6.7z",
+      "contentSize": "1348196785 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "2091e9d6c5800cde896a44a71ad9cada5ac25069d403faf74b61d46efb5bc67f"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/C1+C4+C5.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/C1+C4+C5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/C1+C4+C5.7z",
+      "contentSize": "1347085517 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "df9f73132d6661408a49c729e192faba6e631b51098961f842d5776d01d65ad1"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/C1+C7+C8.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/C1+C7+C8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/C1+C7+C8.7z",
+      "contentSize": "1386418357 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "7288097135909d3e91e6a63a91de666d05d8babf2603c0df81e69edf60638bfe"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/H1+H2+H5.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/H1+H2+H5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/H1+H2+H5.7z",
+      "contentSize": "1346272868 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "0006cf63ce6d44582e8057a053151fe83b76413b160fb39d5cdde491b4e62d18"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/H1+H2+H6.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/H1+H2+H6.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/H1+H2+H6.7z",
+      "contentSize": "1345339766 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "a9dc76e4a6e39ae05c524854b53828033ebc1205ca451779d4862f9c574a4460"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/H1+H3+H4.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/H1+H3+H4.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/H1+H3+H4.7z",
+      "contentSize": "1343719150 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "9dbe4e8613ec55623ae19570ce357fb30b3858470202a0aea520c72a45162b64"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/N1+N2+N8.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/N1+N2+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/N1+N2+N8.7z",
+      "contentSize": "1347102688 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6923dd2aeed82ba9b87e5d91d92b2737d6a73924258dd171d4ce62030cc996c2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/N3+N4+N5.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/N3+N4+N5.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/N3+N4+N5.7z",
+      "contentSize": "1394244814 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "22f7ed8f9a92e8a3a70c32939284076edf6c3e4ec7ad6a0a91f285605f2c866c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "MultiFi-HAR.npy/3p/env2/bright/N6+N7+N8.7z",
+      "name": "MultiFi-HAR.npy/3p/env2/bright/N6+N7+N8.7z",
+      "contentUrl": "MultiFi-HAR.npy/3p/env2/bright/N6+N7+N8.7z",
+      "contentSize": "1385420669 B",
+      "encodingFormat": "application/x-7z-compressed",
+      "sha256": "6535acae7eecd098d539673f6e3f06b358394d12f1b0a3cde1afb7a368b643b5"
+    }
+  ],
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "wd": "https://www.wikidata.org/wiki/"
+  },
+  "conformsTo": "http://mlcommons.org/croissant/1.0"
+}
