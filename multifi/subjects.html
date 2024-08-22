@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>MultiFi-DFL - MultiFi</title>
+        <title>Subjects - MultiFi</title>
 
 
         <!-- Custom HTML head -->
@@ -13,21 +13,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,7 +36,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "../";
+            var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded "><a href="../multifi-dfl/multifi-dfl.html" class="active"><strong aria-hidden="true">1.</strong> MultiFi-DFL</a></li><li class="chapter-item expanded "><a href="../multifi-har/multifi-har.html"><strong aria-hidden="true">2.</strong> MultiFi-HAR</a></li><li class="chapter-item expanded "><a href="../subjects.html"><strong aria-hidden="true">3.</strong> Subjects</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="multifi-dfl/multifi-dfl.html"><strong aria-hidden="true">1.</strong> MultiFi-DFL</a></li><li class="chapter-item expanded "><a href="multifi-har/multifi-har.html"><strong aria-hidden="true">2.</strong> MultiFi-HAR</a></li><li class="chapter-item expanded "><a href="subjects.html" class="active"><strong aria-hidden="true">3.</strong> Subjects</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -145,7 +145,7 @@
                     <h1 class="menu-title">MultiFi</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -174,54 +174,60 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="multifi-dfl"><a class="header" href="#multifi-dfl">MultiFi-DFL</a></h1>
-<p>MultiFi-DFL is a dataset for WiFi-based device-free localization. It provides a total of 710 available positions to localize up to three targets simultaneously.</p>
-<h2 id="grid"><a class="header" href="#grid">Grid</a></h2>
-<p>Figure below shows the experiment setup of MultiFi-DFL, which is used for WiFi-based DFL. The experiment area is divided into 12 ⨉ 12 grid area. The area of each square is 0.6 ⨉ 0.6m. The area of the entire experiment area is 51.84m<sup>2</sup>. Each square contains 5 positions for the target. The center of the grid is the <em>Main-position</em>, and the remaining four <em>Sub-position</em> are located on the four corners. The transmitter (TX) has been placed outside the experiment area. The receiver (RX) has been placed inside the area and occupies two squares. Subtract these two squares, the total number of available positions in MultiFi-DFL is 710. We improve data diversity by placing RX in the experiment area. Thus, there are 12 square (i.e., 60 positions) that are not between TX and RX but behind RX.</p>
-<p><img src="./grid.svg" alt="Grid" /></p>
-<h2 id="file-organization"><a class="header" href="#file-organization">File Organization</a></h2>
-<pre><code>├── MultiFi-DFL  &lt;Raw PicoScenes data&gt;
-│   ├── 0p  &lt;0 target (i.e., environment)&gt;
-│   ├── 1p  &lt;1 target&gt;
-│   |   ├── main  &lt;Main-position&gt;
-│   |   |   ├── (1,1).csi  &lt;Target in (1,1)&gt;
-│   |   |   ├── (1,2).csi  &lt;Target in (1,2)&gt;
-│   |   |   └── ...
-│   |   ├── sub1  &lt;1st sub-position&gt;
-│   |   ├── sub2  &lt;2nd sub-position&gt;
-│   |   └── ...
-│   ├── 2p  &lt;2 targets&gt;
-│   │   └── main  &lt;Main-position&gt;
-│   │       ├── (2,4)+(3,5).csi  &lt;2 targets in (2,4) and (3,5)&gt;
-│   │       ├── (3,3)+(6,4).csi  &lt;2 targets in (3,3) and (6,4)&gt;
-│   │       └── ...
-│   └── 3p  &lt;3 targets&gt;
-│       └── main  &lt;Main-position&gt;
-│           ├── (2,4)+(9,3)+(3,5).csi  &lt;3 targets in (2,4), (9,3), and (3,5)&gt;
-│           ├── (5,5)+(8,8)+(5,3).csi  &lt;3 targets in (5,5), (8,8), and (5,3)&gt;
-│           └── ...
-└── MultiFi-DFL.npy  &lt;Numpy ndarry data&gt;
-    ├── 0p
-    ├── 1p
-    |   └── main
-    |       ├── (1,1).mag.npy        &lt;Amplitude&gt;
-    |       ├── (1,1).phase.npy      &lt;Phase&gt;
-    |       ├── (1,1).timestamp.npy  &lt;Timestamp&gt;
-    |       └── ...
-    └── ...
-</code></pre>
-
+                        <h1 id="subject-group"><a class="header" href="#subject-group">Subject Group</a></h1>
+<p>The subject are numbered from <code>A</code> to <code>U</code>. The subject group used in the dataset are listed below. The scenario is consistent with the directory structure of the dataset.</p>
+<h3 id="multifi-dfl"><a class="header" href="#multifi-dfl">MultiFi-DFL</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Scenario</th><th>Subject</th></tr></thead><tbody>
+<tr><td>1p</td><td>A</td></tr>
+<tr><td>2p</td><td>A+B</td></tr>
+<tr><td>3p</td><td>A+B+I</td></tr>
+</tbody></table>
+</div>
+<h3 id="multifi-har"><a class="header" href="#multifi-har">MultiFi-HAR</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Scenario</th><th>Subject</th></tr></thead><tbody>
+<tr><td>1p-env1-bright-sbj1</td><td>N</td></tr>
+<tr><td>1p-env1-dark-sbj1</td><td>A</td></tr>
+<tr><td>1p-env1-dark-sbj2</td><td>J</td></tr>
+<tr><td>1p-env1-dark-sbj3</td><td>I</td></tr>
+<tr><td>1p-env2-bright-sbj1</td><td>H</td></tr>
+<tr><td>1p-env2-bright-sbj2</td><td>L</td></tr>
+<tr><td>1p-env2-bright-sbj3</td><td>N</td></tr>
+</tbody></table>
+</div>
+<hr />
+<div class="table-wrapper"><table><thead><tr><th>Scenario</th><th>Subject</th></tr></thead><tbody>
+<tr><td>2p-env1-bright-sbj1</td><td>D+I</td></tr>
+<tr><td>2p-env1-dark-sbj1</td><td>D+L</td></tr>
+<tr><td>2p-env1-dark-sbj2</td><td>A+F</td></tr>
+<tr><td>2p-env1-dark-sbj3</td><td>D+N</td></tr>
+<tr><td>2p-env1-dark-sbj4</td><td>D+H</td></tr>
+<tr><td>2p-env2-bright-sbj1</td><td>F+I</td></tr>
+<tr><td>2p-env2-bright-sbj2</td><td>A+I</td></tr>
+<tr><td>2p-env2-bright-sbj3</td><td>K+L</td></tr>
+<tr><td>2p-env2-bright-sbj4</td><td>B+E</td></tr>
+</tbody></table>
+</div>
+<hr />
+<div class="table-wrapper"><table><thead><tr><th>Scenario</th><th>Subject</th></tr></thead><tbody>
+<tr><td>3p-env1-bright-sbj1</td><td>C+D+G</td></tr>
+<tr><td>3p-env1-dark-sbj1</td><td>D+G+H</td></tr>
+<tr><td>3p-env1-dark-sbj2</td><td>C+P+Q</td></tr>
+<tr><td>3p-env1-dark-sbj3</td><td>S+B+E</td></tr>
+<tr><td>3p-env1-dark-sbj4</td><td>C+D+G</td></tr>
+<tr><td>3p-env2-bright-sbj1</td><td>T+O+H</td></tr>
+<tr><td>3p-env2-bright-sbj2</td><td>A+O+H</td></tr>
+<tr><td>3p-env2-bright-sbj3</td><td>C+R+I</td></tr>
+<tr><td>3p-env2-bright-sbj4</td><td>B+U+M</td></tr>
+</tbody></table>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="multifi-har/multifi-har.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../multifi-har/multifi-har.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -229,13 +235,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="multifi-har/multifi-har.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../multifi-har/multifi-har.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
@@ -248,13 +251,13 @@
         </script>
 
 
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 

@@ -7,7 +7,8 @@
 
 
         <!-- Custom HTML head -->
-        
+        <meta name="robots" content="noindex, nofollow">
+
         <meta name="description" content="MultiFi: Multi-target Dataset for WiFi-based Human Action Recognition and Device-free Localization">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -88,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="multifi-dfl/multifi-dfl.html"><strong aria-hidden="true">1.</strong> MultiFi-DFL</a></li><li class="chapter-item expanded "><a href="multifi-har/multifi-har.html"><strong aria-hidden="true">2.</strong> MultiFi-HAR</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="multifi-dfl/multifi-dfl.html"><strong aria-hidden="true">1.</strong> MultiFi-DFL</a></li><li class="chapter-item expanded "><a href="multifi-har/multifi-har.html"><strong aria-hidden="true">2.</strong> MultiFi-HAR</a></li><li class="chapter-item expanded "><a href="subjects.html"><strong aria-hidden="true">3.</strong> Subjects</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -217,7 +218,7 @@
 <li><a href="https://github.com/Herrtian/PicoscenesToolbox">PicoscenesToolbox</a></li>
 </ul>
 <p>* Note: The official parsing library <code>PicoscenesToolbox</code> will preprocess the phase [<a href="https://ps.zpj.io/matlab.html#csi-segment">1</a>,<a href="https://gitlab.com/wifisensing/picoscenes-issue-tracker/-/issues/92">2</a>] and remove the cyclic shift delay (CSD). <code>picoscenes2numpy</code> using the interface of <code>PicoscenesToolbox</code> also remove the CSD in the output of phase.</p>
-<p>* Note: The official parsing library <code>PicoscenesToolbox</code> will interpolate the subcarriers [<a href="https://ps.zpj.io/matlab.html#csi-segment">1</a>,<a href="https://gitlab.com/wifisensing/picoscenes-issue-tracker/-/issues/92">2</a>], and the original 114 subcarriers will be interpolated to 117 subcarriers. <code>picoscenes2numpy</code> refers to <a href="https://ieeexplore.ieee.org/document/5307322">802.11n</a> and the subcarrier index in the data, and removes this subcarrier.</p>
+<p>* Note: The official parsing library <code>PicoscenesToolbox</code> will interpolate the subcarriers [<a href="https://ps.zpj.io/matlab.html#csi-segment">1</a>,<a href="https://gitlab.com/wifisensing/picoscenes-issue-tracker/-/issues/92">2</a>], and the original 114 subcarriers will be interpolated to 117 subcarriers. <code>picoscenes2numpy</code> removes these subcarriers, by refers to <a href="https://ieeexplore.ieee.org/document/5307322">802.11n</a> and the subcarrier index in the data.</p>
 <h2 id="license"><a class="header" href="#license">License</a></h2>
 <p>MultiFi is released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.</p>
 <p><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="https://creativecommons.org/licenses/by-nc-sa/4.0" /></p>
